@@ -22,14 +22,65 @@
 /*******************************************/
 
 body {
-display: flex;
+color: white;
+font-size: 18px;
+background-color: black;
+/*background-image: url(../assets/backgroundwall.jpg)*/
 }
+
+@font-face {
+     font-family: Monoton;
+     src: url(../fonts/Monoton-Regular.ttf);
+ }
+
+ @font-face{
+      font-family: latenight;
+      src: url(../fonts/Neoneon.otf);
+ }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+}
+
+header > h1 {
+     padding-left: 30px;
+     padding-right: 30px;
+}
+
+header > ul{
+     padding: 0;
+}
+
+.neonText1 {
+     color: #fff;
+     text-shadow:
+     0 0 7px #fff,
+     0 0 10px #fff,
+     0 0 21px #fff,
+     0 0 42px #0fa,
+     0 0 82px #0fa,
+     0 0 92px #0fa,
+     0 0 102px #0fa,
+     0 0 151px #0fa;
+}
+
+.neonText2{
+     color: #B026FF;
+     text-shadow:
+     0 0 7px #B026FF,
+     0 0 10px #B026FF,
+     0 0 21px #B026FF,
+     0 0 42px #B026FF,
+     0 0 82px #B026FF,
+     0 0 92px #B026FF,
+     0 0 102px #B026FF,
+     0 0 151px #B026FF;
 
 }
 
@@ -42,12 +93,35 @@ footer {
 /*******************************************/
 
 .topnavbar {
-display: flex
+display: flex;
+font-family: Monoton;
+font-size: 2.4rem;
+text-align: center;
+width: 33%;
+justify-content: center; 
+
 }
+li{
+list-style-type: none;
+
+}
+
+h1.topnavbar{
+     font-size: 4rem;
+     font-family: latenight;
+}
+
 
 #logo {
      height: auto; 
      width: auto; 
      max-width: 300px; 
      max-height: 300px;
+     
  }
+
+
+/***************************************
+/* ANIMATION
+/****************************************/
+
