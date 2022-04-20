@@ -68,18 +68,90 @@ h1, h2 {
 
 h1 {
      font-size: 6.2rem;
-     /*animation: pulsate 1.5s infinite alternate; */ 
-     border: 0.2rem solid #fff;
-     border-radius: 2rem;
-     padding: 0.4em;
-     box-shadow: 0 0 .2rem #fff,
-               0 0 .2rem #fff,
-               0 0 2rem #bc13fe,
-               0 0 0.8rem #bc13fe,
-               0 0 2.8rem #bc13fe,
-               inset 0 0 1.3rem #bc13fe; 
+ 
 }
 
+.topnavbar {
+     display: flex;
+     font-family: Monoton;
+     font-size: 2.4rem;
+     text-align: center;
+     width: 33%;
+     justify-content: center; 
+     
+}
+
+
+
+h1.topnavbar{
+     font-size: 4rem;
+     font-family: "Sacramento", sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+}
+main {
+     padding-top: 50px;
+     display: flex;
+     width: 100%;
+     justify-content: center;
+}
+
+main > p  {
+     width: 50%;
+     font-size: 1.8rem;
+     margin-left: 30px;
+     position: relative;
+     right: 100px;
+
+}
+main > img {
+     position: relative;
+     width: 50%;
+     height: auto; 
+     width: auto; 
+     max-width: 300px; 
+     max-height: 300px;
+     right: 100px
+}
+.threeColumn{
+     display: flex;
+     width: 100%;
+     justify-content: center;
+}
+.threeColumn > section {
+     display: flex;
+     width: 33.3333%;
+     justify-content: center;
+     flex-direction: column;
+}
+.threeColumn > section > img {
+     height: auto; 
+     width: auto; 
+     max-width: 300px; 
+     max-height: 300px;
+
+}
+.threeColumn > section > * {
+     justify-content: center;
+     text-align: center;
+}
+
+
+.center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+   }
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
 .neonText1 {
      color: #fff;
      text-shadow:
@@ -107,77 +179,22 @@ h1 {
 
 }
 
-footer {
-
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-.topnavbar {
-display: flex;
-font-family: Monoton;
-font-size: 2.4rem;
-text-align: center;
-width: 33%;
-justify-content: center; 
-
-}
 li{
 list-style-type: none;
-
-}
-
-h1.topnavbar{
-     font-size: 4rem;
-     font-family: "Sacramento", sans-serif;
-     display: flex;
-     justify-content: center;
-     align-items: center; 
 }
 
 
-#logo {
-     height: auto; 
-     width: auto; 
-     max-width: 300px; 
-     max-height: 300px;
-     
- }
+
+ .neonBorder {
+     border: 0.2rem solid #fff;
+     border-radius: 2rem;
+     padding: 0.4em;
+     box-shadow: 0 0 .2rem #fff,
+               0 0 .2rem #fff,
+               0 0 2rem #bc13fe,
+               0 0 0.8rem #bc13fe,
+               0 0 2.8rem #bc13fe,
+               inset 0 0 1.3rem #bc13fe; 
+}
 
 
-/***************************************
-/* ANIMATION
-/***************************************
-
-@keyframes pulsate {
-    
-     100% {
-   
-         text-shadow:
-         0 0 4px #fff,
-         0 0 11px #fff,
-         0 0 19px #fff,
-         0 0 40px #bc13fe,
-         0 0 80px #bc13fe,
-         0 0 90px #bc13fe,
-         0 0 100px #bc13fe,
-         0 0 150px #bc13fe;
-     
-     }
-     
-     0% {
-   
-       text-shadow:
-       0 0 2px #fff,
-       0 0 4px #fff,
-       0 0 6px #fff,
-       0 0 10px #bc13fe,
-       0 0 45px #bc13fe,
-       0 0 55px #bc13fe,
-       0 0 70px #bc13fe,
-       0 0 80px #bc13fe;
-   
-   }
-   */
