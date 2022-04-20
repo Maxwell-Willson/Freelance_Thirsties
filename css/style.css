@@ -42,6 +42,8 @@ background-color: black;
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+
 header {
      display: flex;
      justify-content: center;
@@ -55,6 +57,26 @@ header > h1 {
 
 header > ul{
      padding: 0;
+}
+
+
+h1, h2 {
+     text-align: center;
+     font-weight: 400;
+   }
+
+h1 {
+     font-size: 6.2rem;
+     /*animation: pulsate 1.5s infinite alternate; */ 
+     border: 0.2rem solid #fff;
+     border-radius: 2rem;
+     padding: 0.4em;
+     box-shadow: 0 0 .2rem #fff,
+               0 0 .2rem #fff,
+               0 0 2rem #bc13fe,
+               0 0 0.8rem #bc13fe,
+               0 0 2.8rem #bc13fe,
+               inset 0 0 1.3rem #bc13fe; 
 }
 
 .neonText1 {
@@ -71,7 +93,7 @@ header > ul{
 }
 
 .neonText2{
-     color: #B026FF;
+     color: #fff;
      text-shadow:
      0 0 7px #B026FF,
      0 0 10px #B026FF,
@@ -108,7 +130,10 @@ list-style-type: none;
 
 h1.topnavbar{
      font-size: 4rem;
-     font-family: latenight;
+     font-family: "Sacramento", sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center; 
 }
 
 
@@ -123,5 +148,35 @@ h1.topnavbar{
 
 /***************************************
 /* ANIMATION
-/****************************************/
+/***************************************
 
+@keyframes pulsate {
+    
+     100% {
+   
+         text-shadow:
+         0 0 4px #fff,
+         0 0 11px #fff,
+         0 0 19px #fff,
+         0 0 40px #bc13fe,
+         0 0 80px #bc13fe,
+         0 0 90px #bc13fe,
+         0 0 100px #bc13fe,
+         0 0 150px #bc13fe;
+     
+     }
+     
+     0% {
+   
+       text-shadow:
+       0 0 2px #fff,
+       0 0 4px #fff,
+       0 0 6px #fff,
+       0 0 10px #bc13fe,
+       0 0 45px #bc13fe,
+       0 0 55px #bc13fe,
+       0 0 70px #bc13fe,
+       0 0 80px #bc13fe;
+   
+   }
+   */
